@@ -7,9 +7,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write   # (optional if you later switch to OIDC)
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
